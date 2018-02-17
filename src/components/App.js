@@ -59,11 +59,6 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    books: state.books.data
-  }
-};
-
+const mapStateToProps = (state, ownProps) => ({books: state.books.data});
 
 export default connect(mapStateToProps)(App);
