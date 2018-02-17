@@ -4,7 +4,7 @@ const validate = require('mongoose-validator');
 const nameValidator = [
   validate({
     validator: 'isLength',
-    arguments: [0, 40],
+    arguments: [0, 100],
     message: 'Title must not exceed {ARGS[1]} characters.'
   })
 ];
